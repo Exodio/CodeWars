@@ -1,0 +1,14 @@
+Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
+
+Examples
+"()"              =>  true
+")(()))"          =>  false
+"("               =>  false
+"(())((()())())"  =>  true
+
+Constraints
+0 <= input.length <= 100
+
+
+Hint (custom)
+An array should be used to keep track of previously appeared opening braces and once any closing tag appears it is needed to match it with the last value of the array, if it’s matching pop the last value out of else or else return false, in the end if you’re left with empty array return true else return false.
